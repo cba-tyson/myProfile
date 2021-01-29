@@ -5,7 +5,7 @@
 
     <!-- Basic -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Glitche - Resume</title>
+    <title>HNTrung - Resume</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -13,12 +13,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Load Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic'
+        rel='stylesheet'>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/orange.min.css" id="light-mode" />
-    <link rel="stylesheet" href="dist/css/dark.min.css" id="dark-mode" />
+    <!-- <link rel="stylesheet" href="dist/css/orange.min.css" id="light-mode" /> -->
+
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/css/dark.min.css" id="dark-mode" disabled />
     <link rel="shortcut icon" href="images/favicons/favicon.ico">
 
 </head>
@@ -46,6 +49,10 @@
         <header>
             <div class="head-top">
                 <a href="#" class="menu-btn"><span></span></a>
+                <label id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
                 <div class="top-menu">
                     <ul>
                         <li class="active"><a href="resume.html" class="lnk">Resume</a></li>
@@ -119,14 +126,16 @@
                                     <div class="date">11/2020 - Present</div>
                                     <div class="name">Front-end Developer - Newnet Stock</div>
                                     <p>
-                                        Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam tincidunt augue in leo feugiat, quis interdum nisi sollicitudin.
+                                        Morbi nulla arcu, pellentesque sed egestas in, tempor eget felis. Nullam
+                                        tincidunt augue in leo feugiat, quis interdum nisi sollicitudin.
                                     </p>
                                 </div>
                                 <div class="resume-item">
                                     <div class="date">08/2020 - 10/2020</div>
                                     <div class="name">Intership Front-end Developer - PTIT</div>
                                     <p>
-                                        Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex lorem, porta nec aliquet eu, ullamcorper eget nibh.
+                                        Duis ipsum ligula, feugiat nec auctor vitae, porta sit amet urna. Praesent ex
+                                        lorem, porta nec aliquet eu, ullamcorper eget nibh.
                                     </p>
                                 </div>
 
@@ -142,7 +151,7 @@
                                     <div class="name">Posts and Telecommunications Institute of Technology
                                     </div>
                                     <p>
-                                        Majors: Software Technology
+                                        Majors: Software Engineering
                                     </p>
                                     <p>GPA: 2.5/4.0</p>
                                 </div>
@@ -156,6 +165,78 @@
                             </div>
                         </div>
                     </div>
+                    <div class="cols">
+                        <div class="col col-md">
+                            <div class="title">
+                                <div class="title_inner">Projects</div>
+                            </div>
+                            <div class="resume-items">
+                                <div class="resume-item">
+                                    <div class="date">10/2020</div>
+                                    <div class="name">WEBSITE SELL TECHNOLOGY EQUIPMENT
+                                    </div>
+                                    <p>
+                                        Link Demo: <a href="http://overt-swing.surge.sh/home.html"
+                                            target="_blank">http://overt-swing.surge.sh/home.html</a>
+                                    </p>
+                                    <p>GitHub: <a
+                                            href="https://github.com/kingcell2/MarketoShop">https://github.com/kingcell2/MarketoShop</a>
+                                    </p>
+                                    <ul>
+                                        <li>Customer: Personal</li>
+                                        <li>Team size: 1</li>
+                                        <li>Description: Simulation project for users to view products, add products to
+                                            cart, pay</li>
+                                        <li>Technologies used: HTML5/SCSS/JAVASCRIPT/JQUERY</li>
+                                        <li>My position: Developer</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <div class="date">08/2020</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-md">
+                            <div class="title">
+                                <div class="title_inner"></div>
+                            </div>
+                            <div class="resume-items">
+                                <div class="resume-item">
+                                    <div class="date"> 11/2019</div>
+                                    <div class="name">WEBSITE SELL KEYCHAINS ONLINE
+                                    </div>
+                                    <p>
+                                        Link Demo: <a href="" target="_blank"></a>
+                                    </p>
+                                    <p>GitHub:<a href="https://github.com/kingcell2/SellKeychains" target="_blank">
+                                            https://github.com/kingcell2/SellKeychains</a>
+                                    </p>
+                                    <ul>
+                                        <li>Customer: Personal</li>
+                                        <li>Team size: 1</li>
+                                        <li>Description: A project for Web Programing Subject at the University.</li>
+                                        <li>The site allows users to place an order or pay on delivery. Besides, there
+                                            is also allowing
+                                            administrators to add, delete, and edit products, user accounts.
+                                        </li>
+                                        <li>Technologies used:
+                                            <ul>
+                                                <li>Front end: HTML/CSS/JAVASCRIPT/JQUERY</li>
+                                                <li>Back end: JAVA (Spring MCV)</li>
+                                            </ul>
+                                        </li>
+                                        <li>Database: Microsoft SQL Server</li>
+                                        <li>My position: Developer</li>
+                                        <li>My responsibillties: Optimize code, FixBug</li>
+                                    </ul>
+                                </div>
+                                <div class="resume-item">
+                                    <div class="date">08/2019</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
@@ -224,22 +305,6 @@
                                 <div class="name">Chinese</div>
                                 <div class="progress ">
                                     <div class="percentage" style="width: 1%;">
-                                        <span class="percent">0%</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">Italian</div>
-                                <div class="progress ">
-                                    <div class="percentage" style="width: 0%;">
-                                        <span class="percent">0%</span>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="name">French</div>
-                                <div class="progress ">
-                                    <div class="percentage" style="width: 0%;">
                                         <span class="percent">0%</span>
                                     </div>
                                 </div>
@@ -321,13 +386,15 @@
                                 <div class="name">Design for print</div>
                             </li>
                             <li>
-                                <div class="name">Have experience in working with Responsive Web Design and CrossBrowser compatibility</div>
+                                <div class="name">Have experience in working with Responsive Web Design and CrossBrowser
+                                    compatibility</div>
                             </li>
                             <li>
                                 <div class="name">Knowledge of simple Database query</div>
                             </li>
                             <li>
-                                <div class="name">Apply CSS animation to create effects for websAble to work in a dynamic and everchanging industryite</div>
+                                <div class="name">Apply CSS animation to create effects for websAble to work in a
+                                    dynamic and everchanging industryite</div>
                             </li>
                             <li>
                                 <div class="name">Able to work in a dynamic and everchanging industry</div>
@@ -391,11 +458,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_1.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -405,11 +472,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_2.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -419,11 +486,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_3.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -433,11 +500,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_1.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -447,11 +514,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_2.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -461,11 +528,11 @@
                                 <a target="_blank" href="https://www.google.com">
                                     <img src="src/img/client_3.png" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -483,7 +550,8 @@
                 <a target="_blank" href="https://dribbble.com/"><span class="ion ion-social-dribbble"></span></a>
                 <a target="_blank" href="https://twitter.com/"><span class="ion ion-social-twitter"></span></a>
                 <a target="_blank" href="https://github.com/"><span class="ion ion-social-github"></span></a>
-                <a target="_blank" href="https://www.instagram.com/"><span class="ion ion-social-instagram-outline"></span></a>
+                <a target="_blank" href="https://www.instagram.com/"><span
+                        class="ion ion-social-instagram-outline"></span></a>
             </div>
             <div class="copy">© 2021 Trung. All rights reserved.</div>
             <div class="clr"></div>
@@ -507,6 +575,7 @@
 
     <!-- Main Scripts -->
     <script src="dist/js/glitche-scripts.js"></script>
+    <script src="dist/js/main.min.js"></script>
 
 </body>
 

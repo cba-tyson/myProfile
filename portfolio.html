@@ -5,7 +5,7 @@
 
     <!-- Basic -->
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Glitche - Portfolio</title>
+    <title>HNTrung - Portfolio</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -13,13 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Load Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+    <link
+        href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic'
+        rel='stylesheet'>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="dist/css/orange.min.css" id="light-mode" />
-    <link rel="stylesheet" href="dist/css/dark.min.css" id="dark-mode" />
+    <!-- <link rel="stylesheet" href="dist/css/orange.min.css" id="light-mode" /> -->
     <link rel="stylesheet" href="dist/css/style.min.css">
-
+    <link rel="stylesheet" href="dist/css/dark.min.css" id="dark-mode" disabled />
 </head>
 
 <body>
@@ -45,6 +46,10 @@
         <header>
             <div class="head-top">
                 <a href="#" class="menu-btn"><span></span></a>
+                <label id="switch" class="switch">
+                    <input type="checkbox" onchange="toggleTheme()" id="slider">
+                    <span class="slider round"></span>
+                </label>
                 <div class="top-menu">
                     <ul>
                         <li><a href="resume.html" class="lnk">Resume</a></li>
@@ -83,38 +88,38 @@
                         <div class="filters">
                             <div class="btn-group">
                                 <label data-text="All" class="glitch-effect">
-									<input type="radio" name="fl_radio" value=".box-item" />All
-								</label>
+                                    <input type="radio" name="fl_radio" value=".box-item" />All
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Video">
-									<input type="radio" name="fl_radio" value=".f-video" />Video
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-video" />Video
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Music">
-									<input type="radio" name="fl_radio" value=".f-music" />Music
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-music" />Music
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Links">
-									<input type="radio" name="fl_radio" value=".f-links" />Links
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-links" />Links
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Image">
-									<input type="radio" name="fl_radio" value=".f-image" />Image
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-image" />Image
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Gallery">
-									<input type="radio" name="fl_radio" value=".f-gallery" />Gallery
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-gallery" />Gallery
+                                </label>
                             </div>
                             <div class="btn-group">
                                 <label data-text="Content">
-									<input type="radio" name="fl_radio" value=".f-content" />Content
-								</label>
+                                    <input type="radio" name="fl_radio" value=".f-content" />Content
+                                </label>
                             </div>
                         </div>
                     </div>
@@ -126,11 +131,11 @@
                                 <a href="#gallery-1" class="has-popup-gallery">
                                     <img src="src/img/work1.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-images"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-images"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                                 <div id="gallery-1" class="mfp-hide">
@@ -151,17 +156,18 @@
                                 <a href="https://youtu.be/S4L8T2kFFck" class="has-popup-video">
                                     <img src="src/img/work2.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-videocamera"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-videocamera"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
                             <div class="desc">
                                 <div class="category">Video</div>
-                                <a href="https://youtu.be/S4L8T2kFFck" class="name has-popup-video">Coffee Cup In Hand</a>
+                                <a href="https://youtu.be/S4L8T2kFFck" class="name has-popup-video">Coffee Cup In
+                                    Hand</a>
                             </div>
                         </div>
 
@@ -170,17 +176,18 @@
                                 <a href="https://beshley.com/" class="has-popup-link" target="_blank">
                                     <img src="src/img/work8.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-link"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-link"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
                             <div class="desc">
                                 <div class="category">Links</div>
-                                <a href="https://beshley.com/" class="name has-popup-link">Love & Care Ceramic Bottles</a>
+                                <a href="https://beshley.com/" class="name has-popup-link">Love & Care Ceramic
+                                    Bottles</a>
                             </div>
                         </div>
 
@@ -189,11 +196,11 @@
                                 <a href="src/img/work4.jpg" class="has-popup-image">
                                     <img src="src/img/work4.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-image"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-image"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -208,11 +215,11 @@
                                 <a href="#gallery-2" class="has-popup-gallery">
                                     <img src="src/img/work5.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-images"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-images"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                                 <div id="gallery-2" class="mfp-hide">
@@ -230,20 +237,22 @@
 
                         <div class="box-item f-music">
                             <div class="image">
-                                <a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="has-popup-music">
+                                <a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true"
+                                    class="has-popup-music">
                                     <img src="src/img/work6.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-music-note"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-music-note"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
                             <div class="desc">
                                 <div class="category">Music</div>
-                                <a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true" class="name has-popup-music">Marta Veludo Beautiful Poster</a>
+                                <a href="https://w.soundcloud.com/player/?visual=true&#038;url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F221650664&#038;show_artwork=true"
+                                    class="name has-popup-music">Marta Veludo Beautiful Poster</a>
                             </div>
                         </div>
 
@@ -252,11 +261,11 @@
                                 <a href="src/img/work7.jpg" class="has-popup-image">
                                     <img src="src/img/work7.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-image"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-image"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -271,11 +280,11 @@
                                 <a href="#popup-1" class="has-popup-media">
                                     <img src="src/img/work3.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-ios-plus-empty"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-ios-plus-empty"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -292,7 +301,9 @@
                                         <div class="category">Graphics</div>
                                         <h4>Hello World Paper</h4>
                                         <p>
-                                            Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+                                            Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+                                            volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas
+                                            explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
                                         </p>
                                         <a href="#" class="btn" data-text="View Project">View Project</a>
                                     </div>
@@ -305,11 +316,11 @@
                                 <a href="#popup-2" class="has-popup-media">
                                     <img src="src/img/work3.jpg" alt="" />
                                     <span class="info">
-										<span class="centrize full-width">
-											<span class="vertical-center">
-												<span class="ion ion-ios-plus-empty"></span>
-                                    </span>
-                                    </span>
+                                        <span class="centrize full-width">
+                                            <span class="vertical-center">
+                                                <span class="ion ion-ios-plus-empty"></span>
+                                            </span>
+                                        </span>
                                     </span>
                                 </a>
                             </div>
@@ -326,7 +337,9 @@
                                         <div class="category">Graphics</div>
                                         <h4>Hello World Paper</h4>
                                         <p>
-                                            Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
+                                            Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus. Eu
+                                            volumus explicari sed. Mel mutat vituperata suscipiantur et, et fabellas
+                                            explicari adipiscing quo, no mucius euismod vis. Cu vim quem quod cibo.
                                         </p>
                                         <a href="#" class="btn" data-text="View Project">View Project</a>
                                     </div>
@@ -347,7 +360,8 @@
                 <a target="_blank" href="https://dribbble.com/"><span class="ion ion-social-dribbble"></span></a>
                 <a target="_blank" href="https://twitter.com/"><span class="ion ion-social-twitter"></span></a>
                 <a target="_blank" href="https://github.com/"><span class="ion ion-social-github"></span></a>
-                <a target="_blank" href="https://www.instagram.com/"><span class="ion ion-social-instagram-outline"></span></a>
+                <a target="_blank" href="https://www.instagram.com/"><span
+                        class="ion ion-social-instagram-outline"></span></a>
             </div>
             <div class="copy">© 2021 Trung. All rights reserved.</div>
             <div class="clr"></div>
@@ -371,7 +385,7 @@
 
     <!-- Main Scripts -->
     <script src="dist/js/glitche-scripts.js"></script>
-
+    <script src="dist/js/main.min.js"></script>
 </body>
 
 </html>
